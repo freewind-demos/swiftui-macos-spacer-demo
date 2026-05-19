@@ -11,6 +11,7 @@ targets:
   SwiftUISpacerDemo:
     type: application
     platform: macOS
+    productName: SwiftUISpacerDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUISpacerDemo:
+    build:
+      targets:
+        SwiftUISpacerDemo: all
+    run:
+      config: Debug
